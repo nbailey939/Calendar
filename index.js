@@ -8,6 +8,7 @@ const lastDay = new Date(
   monthsIndex + 1,
   0
 ).getDate();
+// because JS starts on Sunday and our Calendar starts on Monday the -1 is used to adjust accordingly.
 const firstDay =
   new Date(new Date().getFullYear(), monthsIndex, 1).getDay() - 1;
 //month names in an Array
